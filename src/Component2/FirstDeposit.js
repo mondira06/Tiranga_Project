@@ -57,7 +57,6 @@ const FirstDeposit = () => {
             justifyContent: "space-between",
           }}
         >
-          {/* Content */}
           <Box sx={{ backgroundColor: "#394363", padding: 2, flexGrow: 1 }}>
             <Box sx={{ textAlign: "center", marginBottom: 2 }}>
               <Typography variant="h6" sx={{ color: "#ffffff", marginBottom: 1 }}>
@@ -67,7 +66,6 @@ const FirstDeposit = () => {
                 Each account can only receive rewards once
               </Typography>
             </Box>
-            {/* Deposit options */}
             {depositOptions.map((option, index) => (
               <Card key={index} sx={{ backgroundColor: "#394363", marginBottom: 2 }}>
                 <CardContent>

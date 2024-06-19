@@ -4,6 +4,7 @@ import FirstDeposit from './Component2/FirstDeposit';
 import RandomPage from './Component2/RandomPage';
 import Notification from './Component3/Notification';
 import Dashboard from './Component4/Dashboard';
+import Safe from './Component5/Safe';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       {/* <LoadingPage/> */}
       {/* <FirstDeposit/> */}
       {/* <Notification/> */}
-      <Dashboard/>
+      {/* <Dashboard/> */}
       {/* <RandomPage/> */}
+      <Safe/>
     </div>
   );
 }
