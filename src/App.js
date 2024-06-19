@@ -5,6 +5,7 @@ import RandomPage from './Component2/RandomPage';
 import Notification from './Component3/Notification';
 import Dashboard from './Component4/Dashboard';
 import Safe from './Component5/Safe';
+import V1 from './Component 6/V1'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <Notification/> */}
       {/* <Dashboard/> */}
       {/* <RandomPage/> */}
-      <Safe/>
+      {/* <Safe/> */}
+      <V1/>
     </div>
   );
 }
