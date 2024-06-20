@@ -10,7 +10,7 @@ import VideoContest from "./Component7/VideoContest";
 import WinStreak from "./Component7/WinStreak";
 import DepositBonus from "./Component7/DepositBonus";
 import TCSupportFunds from "./Component7/TCSupportFunds";
-
+import ClubHome from "./Component8/ClubHome";
 function App() {
   return (
     <div className="App">
@@ -23,8 +23,9 @@ function App() {
       {/* <DailyBonus/> */}
       {/* <VideoContest/> */}
       {/* <WinStreak/> */}
-      <TCSupportFunds />
+      {/* <TCSupportFunds /> */}
       {/* <DepositBonus/> */}
+      <ClubHome/>
     </div>
   );
 }
