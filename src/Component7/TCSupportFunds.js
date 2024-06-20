@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Container, Box } from "@mui/material";
 
-const PilotAirlines = () => {
+const TCSupportFunds = () => {
   return (
     <Container
       maxWidth="sm"
@@ -43,19 +43,16 @@ const PilotAirlines = () => {
           variant="body2"
           sx={{ textAlign: "justify", marginBottom: 1 }}
         >
-1. Reward can only be obtained once per day
-<br />
-2.Screenshot your winning X50 to your Official Tutor to get the rewards
-
+          1.Funds can only be claimed to the official tutor
           <br />
-          3.Starting bet minimum 100rs
-
+          2.Calculation method: Based on the first recharge amount of the day
+          and the same day account remaining balance when you apply to calculate
+          the rate of support funds
           <br />
-          4.Same IP and multiple ID is prohibited and cannot claim the bonus
+          3.Losing player can apply for 8% support funds with tutor
           <br />
-          5.
-In order to avoid differences in the understanding the platform reserves the right of final interpretation of this Activity
-          <br />
+          4.In order to avoid differences in the understanding the platform
+          reserves the right of final interpretation of this Activity
         </Typography>
         <div style={{ marginBottom: 20 }} />
       </Box>
@@ -63,4 +60,4 @@ In order to avoid differences in the understanding the platform reserves the rig
   );
 };
 
-export default PilotAirlines;
+export default TCSupportFunds;
