@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Grid, Typography, Button, Paper, Box, Icon } from "@mui/material";
 import { styled, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -14,19 +14,27 @@ const Header = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   overflow: "hidden",
   position: "relative",
-
 }));
 
 const ImageWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
-  transition: "transform 3s",
-  width: "100%", 
+  width: "100%",
 }));
 
 const Content = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   borderRadius: "30px",
   marginBottom: theme.spacing(1),
+  height: "15px", 
+  overflow: "hidden",
+  position: "relative",
+  backgroundColor: "#f5f5f5",
+}));
+
+const ScrollingContent = styled(Box)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  transition: "transform 0.5s ease-in-out",
 }));
 
 const LotteryItem = styled(Paper)(({ theme }) => ({
@@ -76,7 +84,6 @@ const initialWinners = [
     image1: "/assets/Icon1.png",
   },
 ];
-
 const earnings = [
   {
     number: "4",
@@ -92,17 +99,6 @@ const earnings = [
   },
 ];
 
-const Stage = styled(Paper)(({ theme }) => ({
-  position: "relative",
-  width: "100%",
-}));
-
-const StyledPaper = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(2),
-  marginBottom: theme.spacing(2),
-  transition: "transform 0.5s ease-in-out",
-}));
-
 const imageUrls = [
   "/assets/Banner1.jpg",
   "/assets/Banner2.jpg",
@@ -110,16 +106,45 @@ const imageUrls = [
   "/assets/Banner4.png",
   "/assets/Banner5.jpg",
 ];
+const StyledPaper = styled(Paper)(({ theme }) => ({
+  padding: theme.spacing(2),
+  marginBottom: theme.spacing(2),
+  transition: "transform 0.5s ease-in-out",
+}));
+
+
 
 const ClubHome = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const [winners, setWinners] = useState(initialWinners);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const contentRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+      if (contentRef.current) {
+        contentRef.current.scrollTop += 1;
+        if (contentRef.current.scrollTop >= contentRef.current.scrollHeight - contentRef.current.clientHeight) {
+          contentRef.current.scrollTop = 0;
+        }
+      }
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => {
+        const newIndex = (prevIndex + 1) % imageUrls.length;
+        if (newIndex === 0) {
+          setTimeout(() => {
+            setCurrentImageIndex(1);
+          }, 0);
+        }
+        return newIndex;
+      });
     }, 3000); 
     return () => clearInterval(interval);
   }, []);
@@ -135,10 +160,11 @@ const ClubHome = () => {
     return () => clearInterval(interval);
   }, []);
 
+
   return (
     <ContainerStyled>
        <Header>
-       <ImageWrapper
+        <ImageWrapper
           style={{
             transform: `translateX(-${currentImageIndex * 100}%)`,
           }}
@@ -156,11 +182,21 @@ const ClubHome = () => {
           ))}
         </ImageWrapper>
       </Header>
-      <Content>
-        <Typography variant="body1" color="error" >
-          Our customer service never sends a link to the member, if you received
-          a link from someone else it might be a scam.
-        </Typography>
+      <Content ref={contentRef}>
+        <ScrollingContent>
+          <Typography variant="body1" color="error">
+            Our customer service never sends a link to the member, if you received a link from someone else it might be a scam.
+          </Typography>
+          <Typography variant="body1" color="error">
+          Welcome to 91 CLUB! We have a variety of g
+          ames, promos and bonus for you to enjoy, s          </Typography>
+          <Typography variant="body1" color="error">
+          Due to unstable of bank india will have dela
+          y or failed on payment, so if you are experie          </Typography>
+          <Typography variant="body1" color="error">
+          If your deposit not receive, please send it di
+          rectly to 91CLUB Self-service Center (http          </Typography>
+        </ScrollingContent>
       </Content>
       <Box sx={{ display: "flex", alignItems: "flex-start" }}>
         <Box
@@ -348,7 +384,7 @@ const ClubHome = () => {
                   src="/assets/1-a6662edb.png"
                   alt=""
                   style={{
-                    width: "70px",
+                    width: "80px",
                     height: "70px",
                     borderRadius: "50%",
                     border: "0.5px solid",
@@ -528,7 +564,6 @@ const ClubHome = () => {
               </Typography>
             </div>
           </Box>
-        {/* </Stage> */}
         {earnings.map((earner, index) => (
           <StyledPaper key={index}>
             <Grid container alignItems="center" spacing={2}>

@@ -13,8 +13,7 @@ import WinStreak from "./Component7/WinStreak";
 import DepositBonus from "./Component7/DepositBonus";
 import TCSupportFunds from "./Component7/TCSupportFunds";
 import ClubHome from "./Component8/ClubHome";
-
-
+import BDGame from './Component10/BDGame';
 function App() {
   return (
     <div className="App">
@@ -28,7 +27,8 @@ function App() {
       {/* <DailyBonus/> */}
       {/* <VideoContest/> */}
       {/* <WinStreak/> */}
-      <ClubHome/>
+      {/* <ClubHome/> */}
+      <BDGame/>
      {/* <TCSupportFunds /> */}
       {/* <DepositBonus/> */}
     </div>
