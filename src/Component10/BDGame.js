@@ -631,7 +631,7 @@ const BDGame = () => {
                 color: "#795548",
               }}
             >
-              Mem***3789
+              Mem***MUO
               <br />
               <span
                 style={{
@@ -640,7 +640,7 @@ const BDGame = () => {
                   borderRadius: "50px",
                 }}
               >
-                ₹48843e2ee
+                ₹297,351,600.00
               </span>
             </Typography>
 
@@ -648,12 +648,12 @@ const BDGame = () => {
               style={{
                 position: "absolute",
                 top: "70%",
-                left: isSmallScreen ? "15%" : "20%",
+                left: isSmallScreen ? "15%" : "15%",
                 transform: "translate(-50%, -50%)",
                 color: "#795548",
               }}
             >
-              Mem***3789
+              Mem***QIL
               <br />
               <span
                 style={{
@@ -662,7 +662,7 @@ const BDGame = () => {
                   borderRadius: "50px",
                 }}
               >
-                ₹48843e2ee
+                ₹154,154,000.00
               </span>
             </Typography>
 
@@ -670,12 +670,12 @@ const BDGame = () => {
               style={{
                 position: "absolute",
                 top: "70%",
-                left: isSmallScreen ? "85%" : "80%",
+                left: isSmallScreen ? "85%" : "85%",
                 transform: "translate(-50%, -50%)",
                 color: "#795548",
               }}
             >
-              Mem***3789
+              Mem***IQL
               <br />
               <span
                 style={{
@@ -684,7 +684,7 @@ const BDGame = () => {
                   borderRadius: "50px",
                 }}
               >
-                ₹48843e2ee
+                ₹84,280,000.00
               </span>
             </Typography>
           </div>

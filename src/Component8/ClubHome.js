@@ -367,139 +367,148 @@ const ClubHome = () => {
             ))}
           </Grid>
         </Box>
-
         <Typography variant="h5" gutterBottom>
           Today's Earnings Chart
         </Typography>
-          <Box backgroundColor="white">
-            <Box
-              display="flex"
-              flexDirection="row"
-              justifyContent="space-evenly"
-            >
-              <div
-                style={{ position: "relative", width: "80px", height: "70px" }}
-              >
-                <img
-                  src="/assets/1-a6662edb.png"
-                  alt=""
-                  style={{
-                    width: "80px",
-                    height: "70px",
-                    borderRadius: "50%",
-                    border: "0.5px solid",
-                  }}
-                />
-                <img
-                  src="/assets/crown2.png"
-                  alt="fej;"
-                  style={{
-                    position: "absolute",
-                    top: "9%",
-                    left: "10%",
-                    transform: "translate(-50%, -50%)",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-              </div>
-              <div
-                style={{ position: "relative", width: "80px", height: "70px" }}
-              >
-                <img
-                  src="/assets/Pro1.png"
-                  alt=""
-                  style={{
-                    width: "80px",
-                    height: "70px",
-                    borderRadius: "50%",
-                    border: "0.5px solid",
-                  }}
-                />
-                <img
-                  src="/assets/crown1.png"
-                  alt="fej;"
-                  style={{
-                    position: "absolute",
-                    top: "9%",
-                    left: "10%",
-                    transform: "translate(-50%, -50%)",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-              </div>
-              <div
-                style={{ position: "relative", width: "80px", height: "70px" }}
-              >
-                <img
-                  src="/assets/Pro4.png"
-                  alt=""
-                  style={{
-                    width: "80px",
-                    height: "70px",
-                    borderRadius: "50%",
-                    border: "0.5px solid",
-                  }}
-                />
-                <img
-                  src="/assets/crown3.png"
-                  alt="fej;"
-                  style={{
-                    position: "absolute",
-                    top: "9%",
-                    left: "10%",
-                    transform: "translate(-50%, -50%)",
-                    width: "50px",
-                    height: "50px",
-                  }}
-                />
-              </div>
-            </Box>
-            <Box
-              display="flex"
-              flexDirection="row"
-              justifyContent="space-evenly"
-            ></Box>
+           <Box>
+          <div style={{ position: "relative", width: "100%", height: "150px", marginTop: "100px" }}>
+            <img
+              src="/assets/stage.png"
+              alt="no image"
+              style={{ width: "100%", height: "100%" }}
+            />
             <div
-              style={{ position: "relative", width: "100%", height: "150px" }}
+              style={{
+                position: "absolute",
+                top: "-40px",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
             >
               <img
-                src="/assets/stage.png"
-                alt="no image"
-                style={{ width: "100%", height: "100%" }}
-              />
-              <img
-                src="/assets/place1.png"
+                src="/assets/Pro1.png"
                 alt=""
                 style={{
-                  position: "absolute",
-                  top: "0%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
+                  width: "80px",
+                  height: "70px",
+                  borderRadius: "50%",
+                  position: "relative",
                 }}
               />
               <img
-                src="/assets/place2.png"
+                src="/assets/crown1.png"
                 alt=""
                 style={{
                   position: "absolute",
                   top: "15%",
-                  left: "15%",
+                  left: "20%",
                   transform: "translate(-50%, -50%)",
+                  width: "50px",
+                  height: "50px",
+                }}
+              />
+            </div>
+            <img
+              src="/assets/place1.png"
+              alt=""
+              style={{
+                position: "absolute",
+                top: "0%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "100px",
+                height: "25px",
+              }}
+            />
+
+            <div
+              style={{
+                position: "absolute",
+                top: "10%",
+                left: "17%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <img
+                src="/assets/Pro4.png"
+                alt=""
+                style={{
+                  width: "80px",
+                  height: "70px",
+                  borderRadius: "50%",
+                  position: "relative",
                 }}
               />
               <img
-                src="/assets/place3.png"
+                src="/assets/crown2.png"
                 alt=""
                 style={{
                   position: "absolute",
                   top: "15%",
-                  left: "85%",
+                  left: "20%",
                   transform: "translate(-50%, -50%)",
+                  width: "50px",
+                  height: "50px",
                 }}
               />
-              <Typography
+            </div>
+            <img
+              src="/assets/place2.png"
+              alt=""
+              style={{
+                position: "absolute",
+                top: "30%",
+                left: "17%",
+                transform: "translate(-50%, -50%)",
+                width: "100px",
+                height: "25px",
+              }}
+            />
+
+            <div
+              style={{
+                position: "absolute",
+                top: "5%",
+                left: "83%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <img
+                src="/assets/Pro5.png"
+                alt=""
+                style={{
+                  width: "80px",
+                  height: "70px",
+                  borderRadius: "50%",
+                  position: "relative",
+                }}
+              />
+              <img
+                src="/assets/crown3.png"
+                alt=""
+                style={{
+                  position: "absolute",
+                  top: "12%",
+                  left: "20%",
+                  transform: "translate(-50%, -50%)",
+                  width: "50px",
+                  height: "50px",
+                }}
+              />
+            </div>
+            <img
+              src="/assets/place3.png"
+              alt=""
+              style={{
+                position: "absolute",
+                top: "25%",
+                left: "83%",
+                transform: "translate(-50%, -50%)",
+                width: "100px",
+                height: "25px",
+              }}
+            />
+           <Typography
                 style={{
                   position: "absolute",
                   top: "60%",
@@ -508,7 +517,7 @@ const ClubHome = () => {
                   color: "white", 
                 }}
               >
-                Mem***3789
+                Mem***IOY
                 <br />
                 <p
                   style={{
@@ -517,19 +526,19 @@ const ClubHome = () => {
                     borderRadius: "50px",
                   }}
                 >
-                  ₹48843e2ee
+                  ₹79,233,095,55
                 </p>
               </Typography>
               <Typography
                 style={{
                   position: "absolute",
                   top: "70%",
-                  left: isSmallScreen ? '15%' : '20%',
+                  left: isSmallScreen ? '15%' : '15%',
                   transform: "translate(-50%, -50%)",
                   color: "white", 
                 }}
               >
-                Mem***3789
+                Mem***WWK
                 <br />
                 <p
                   style={{
@@ -538,19 +547,19 @@ const ClubHome = () => {
                     borderRadius: "50px",
                   }}
                 >
-                  ₹48843e2ee
+                  ₹26,583,091.92
                 </p>
               </Typography>
               <Typography
                 style={{
                   position: "absolute",
                   top: "70%",
-                  left:  isSmallScreen ? '85%' : '80%',
+                  left:  isSmallScreen ? '85%' : '85%',
                   transform: "translate(-50%, -50%)",
-                  color: "white", // Assuming you want the text to be visible on the image
+                  color: "white", 
                 }}
               >
-                Mem***3789
+                Mem***BLY
                 <br />
                 <p
                   style={{
@@ -559,11 +568,11 @@ const ClubHome = () => {
                     borderRadius: "50px",
                   }}
                 >
-                  ₹48843e2ee
+                  ₹10,043,236.00
                 </p>
               </Typography>
-            </div>
-          </Box>
+          </div>
+        </Box>
         {earnings.map((earner, index) => (
           <StyledPaper key={index}>
             <Grid container alignItems="center" spacing={2}>
