@@ -578,7 +578,6 @@ const BDGame = () => {
                 height: "25px",
               }}
             />
-
             <div
               style={{
                 position: "absolute",
@@ -623,33 +622,33 @@ const BDGame = () => {
               }}
             />
             <Typography
-              style={{
-                position: "absolute",
-                top: "60%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                color: "#795548",
-              }}
-            >
-              Mem***MUO
-              <br />
-              <span
-                style={{
-                  background: "linear-gradient(to top,#fbc02d, #ffecb3)",
-                  padding: "1px",
-                  borderRadius: "50px",
-                }}
-              >
-                ₹297,351,600.00
-              </span>
-            </Typography>
-
+      style={{
+        position: 'absolute',
+        top: '60%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        color: '#795548',
+      }}
+    >
+      Mem***MUO
+      <br />
+      <span
+        style={{
+          background: "linear-gradient(to top,#fbc02d, #ffecb3)",
+          padding: "1px",
+          borderRadius: "50px",
+          fontSize: "15px"
+        }}
+      >
+        ₹297,351,600.00
+      </span>
+    </Typography>
             <Typography
               style={{
                 position: "absolute",
                 top: "70%",
-                left: isSmallScreen ? "15%" : "15%",
-                transform: "translate(-50%, -50%)",
+                left: isSmallScreen ? "13%" : "15%",
+                transform: "translate(-40%, -50%)",
                 color: "#795548",
               }}
             >
@@ -660,12 +659,12 @@ const BDGame = () => {
                   background: "linear-gradient(to top,#fbc02d, #ffecb3)",
                   padding: "1px",
                   borderRadius: "50px",
+                  fontSize: "12px"
                 }}
               >
                 ₹154,154,000.00
               </span>
             </Typography>
-
             <Typography
               style={{
                 position: "absolute",
@@ -682,6 +681,7 @@ const BDGame = () => {
                   background: "linear-gradient(to top,#fbc02d, #ffecb3)",
                   padding: "1px",
                   borderRadius: "50px",
+                  fontSize: "12px"
                 }}
               >
                 ₹84,280,000.00
